@@ -1,0 +1,130 @@
+body {
+    max-width: 320px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 88px;
+    min-width: 320px;
+    align-items: center;
+}
+
+.close_menu {
+    margin: 20px 17px 20px 20px;
+}
+
+.button {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.header__button {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.header__logo {
+    margin: 14px 48px 14px 0;
+}
+
+.header__logo:hover {
+    opacity: 0.9;
+}
+
+.button:hover {
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+
+.main {
+    display: flex;
+    vertical-align: center;
+    padding: 24px 0 268px 0;
+}
+
+.main__line {
+    margin-top: -6px;
+}
+
+.main__ul-menu {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-menu__li {
+    margin: 0 0 32px 24px;
+}
+
+.ul-menu__li_active {
+    color: #7E7E82;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.footer__connection {
+    display: flex;
+    margin-left: 24px;
+}
+
+.connection__icon {
+    margin-right: 16px;
+}
+
+.footer__email {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    margin: 16px 0 12px 24px;
+}
+
+.footer__number {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1B1C21;
+    margin: 0 0 12px 24px;
+    font-weight: bold;
+}
+
+.footer__languages {
+    margin: 40px 0 0 24px;
+}
+
+.languages__button {
+    display: none;
+}
+
+.languages__text {
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    margin: 0 7px 0 0;
+}
+
+.languages__text-active {
+    color: #7E7E82;
+}
+/*Возможность переключать языки, но не дореализованная (без логики, чтоб отключался изначально автивный)*/
+.languages__button:checked + span{
+    color: #7E7E82;
+}
