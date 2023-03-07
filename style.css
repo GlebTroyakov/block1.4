@@ -5,9 +5,10 @@ body {
     left: 0;
     margin: 0;
     padding: 0;
+    box-shadow: -5px 0 25px 0 #7E7E82;
 }
 
-.header {
+.header-menu {
     display: flex;
     justify-content: flex-start;
     min-height: 88px;
@@ -26,16 +27,16 @@ body {
     padding: 0;
 }
 
-.header__button {
+.header-menu__button {
     margin-left: 24px;
     margin-right: 24px;
 }
 
-.header__logo {
+.header-menu__logo {
     margin: 14px 48px 14px 0;
 }
 
-.header__logo:hover {
+.header-menu__logo:hover {
     opacity: 0.9;
 }
 
@@ -45,9 +46,9 @@ body {
     transition-duration: 0.5s;
 }
 
-.main {
-    display: flex;
-    vertical-align: center;
+.main-menu {
+    /*display: flex;*/
+    /*vertical-align: center;*/
     padding: 24px 0 268px 0;
 }
 
@@ -55,7 +56,7 @@ body {
     margin-top: -6px;
 }
 
-.main__ul-menu {
+.main-menu__ul-menu {
     font-family: "TT Lakes", sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -65,21 +66,48 @@ body {
     padding: 0;
 }
 
+.ul-menu__link {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
 .ul-menu__li {
     margin: 0 0 32px 24px;
+    transition: 0.3s;
+}
+
+.ul-menu__li:hover {
+    transform: translateX(25px);
+}
+
+.ul-menu__li:hover .ul-menu__link{
+    color: #7E7E82;
+}
+
+.ul-menu__li:hover .ul-menu__link::before {
+    content: '';
+    position: absolute;
+    border-color: #41F6D7;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 0 4px 4px 0;
+    height: 32px;
+    top: -5px;
+    left: -49px;
+    width: 0;
 }
 
 .ul-menu__li_active {
     color: #7E7E82;
 }
 
-.footer {
+.footer-menu {
     display: flex;
     flex-direction: column;
     padding-bottom: 32px;
 }
 
-.footer__connection {
+.footer__connection-menu {
     display: flex;
     margin-left: 24px;
 }
@@ -88,7 +116,7 @@ body {
     margin-right: 16px;
 }
 
-.footer__email {
+.footer-menu__email {
     font-family: "TT Lakes", sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -96,7 +124,7 @@ body {
     margin: 16px 0 12px 24px;
 }
 
-.footer__number {
+.footer-menu__number {
     font-family: "TT Lakes", sans-serif;
     font-size: 24px;
     line-height: 24px;
@@ -105,7 +133,7 @@ body {
     font-weight: bold;
 }
 
-.footer__languages {
+.footer-menu__languages {
     margin: 40px 0 0 24px;
 }
 
